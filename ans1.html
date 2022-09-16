@@ -1,41 +1,44 @@
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Form</title>
-    <script src="script1.js" defer=""></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script1.js" defer></script>
     <style>
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: Arial, verdana, sans-serif;
       }
-      .bg-img{ background-image:url("https://images.pling.com/img/00/00/33/91/33/1253067/27294f29804777dfb4184c1d9703710e9848.jpg");
+      .bg-img{ background-image:url("https://tse3.mm.bing.net/th?id=OIP.0B8FoaGmIdKyEQwRSy26ngHaEK&pid=Api&P=0");
         background-size: cover;
         background-repeat: no-repeat;}
+        /*
       .head {
         margin-top: 1rem;
+        /* color: white; */
       }
+      
+      
       .form {
+        align-content: center;
         display: flex;
         align-items: center;
         flex-direction: column;
         background-color: white;
-        width: 600px;
+        width: 1600px;
         height: 500px;
-        box-shadow: 2px 4px 10px gray;
-        border: 10px solid rgb(212, 107, 107);
-        border-radius: 20px;
-        padding: 20px;
+        background-color: lightblue;
+        
       }
       .input {
         padding: 10px 15px;
-        border: 2px solid rgba(30, 28, 38, 0.4);
-        font-size: 18px;
-        outline: none;
-        border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0.02);
+        
+      
       }
       label {
         font-size: 18px;
@@ -43,12 +46,10 @@
       }
       
       .btn {
-        background-color: rgb(46, 240, 146);
-        color: white;
+        background-color:yellow;
+        color: black;
         padding: 10px 20px;
-        font-size: large;
-        font-weight: 600;
-        border-radius: 10px;
+      
       }
 
       input:invalid:focus {
@@ -70,47 +71,72 @@
         text-align: center;
         margin-top: 2rem;
       }
-      .entries{
-        background-image:url("https://images.pling.com/img/00/00/33/91/33/1253067/27294f29804777dfb4184c1d9703710e9848.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
     </style>
   </head>
-  <body>
+  <body bgcolor="pink">
     <div class="bg-img">
       <form class="form" id="form">
         <h2 align="center" style="color:blue;">Registration Form</h2>
+        <br><br>
+        <center>
 
         <table class="tableForm" cellspacing="25px">
-          <tbody><tr>
+          <tr>
             <td><label for="name">Name :</label></td>
             <td>
-              <input class="input" type="text" name="name" id="name" placeholder="Full Name" required="">
+              <input
+                class="input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Full Name"
+                required
+              />
             </td>
           </tr>
           <tr>
             <td><label for="email">E-mail :</label></td>
             <td>
-              <input class="input" type="email" name="email" id="email" placeholder="Email" required="">
+              <input
+                class="input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+              />
             </td>
           </tr>
           <tr>
             <td><label for="name">Password :</label></td>
             <td>
-              <input class="input" type="password" name="password" id="password" placeholder="Password" required="">
+              <input
+                class="input"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                required
+              />
             </td>
           </tr>
           <tr>
             <td><label for="dob">Date Of Birth :</label></td>
             <td>
-              <input style="width: 220px; border: 2px solid rgba(0, 0, 0, 0.4);" class="input" type="date" name="dob" id="dob" required="">
+              <input
+                style="width: 220px"
+                class="input"
+                type="date"
+                name="dob"
+                id="dob"
+                required
+              />
             </td>
           </tr>
           <tr>
             <td colspan="2">
-              <input type="checkbox" name="agree" id="agree">
-              <label for="checkbox">Accept Terms &amp; Conditions</label>
+              <input type="checkbox" name="agree" id="agree" />
+              <label for="checkbox">Accept Terms & Conditions</label>
             </td>
           </tr>
           <tr>
@@ -118,21 +144,14 @@
               <button class="btn" type="submit">Submit</button>
             </td>
           </tr>
-        </tbody></table>
+        </table>
       </form>
     </div>
+  </center>
 
     <div class="entry">
       <h2 class="subHead">Entries</h2>
-      <div id="tableDiv"><table class="table" border="2">
-  <tbody><tr>
-    <th class="th">Name</th>
-    <th class="th">Email</th>
-    <th class="th">Password</th>
-    <th class="th">Dob</th>
-    <th class="th">Accepted terms?</th>
-  </tr>
-  </tbody></table></div>
+      <div id="tableDiv"></div>
     </div>
-  
-</body>
+  </body>
+</html>
