@@ -1,5 +1,8 @@
 let form = document.getElementById("form");
 
+// localStorage.clear();
+// let Entries = [];
+
 const retriveEntries = () => {
   let entries = localStorage.getItem("userEntry");
 
@@ -10,6 +13,7 @@ const retriveEntries = () => {
   }
   return entries;
 };
+
 let Entries = retriveEntries();
 
 const displayEntries = () => {
